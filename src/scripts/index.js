@@ -15,11 +15,15 @@ import {
 class AppInitializer {
 
     templates = {
-        'free-mp3': About
+        'free-mp3': About,
+        'most-viewed': About,
+        'video': About,
+        'artist-login': About,
+        'blog': About,
+        'top-downloads': About
     }
 
     buildRoutes(data){
-        console.log(data.pages)
         return data.pages.map((page, i) => {
             return(
                 <Route
